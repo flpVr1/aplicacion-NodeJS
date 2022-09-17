@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Proyecto Testing plaicado Número 3</title>
+    <%- include('partials/head') %>
+  </head>
+  <body>
+
+    <!-- CABEZERA QUE VINCULAMOS CON OTRO ARCHIVO -->
+    <%- include('partials/navigation') %>
+
+    <!-- CONTENIDO PRINCIPAL -->
+
+    <header class="container vh-100 d-flex justify-content-center align-items-center">
+
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <img src="/img/fv.png" class="w-25 m-auto animated bounceIn" alt="Website Logo"/>
+        <h1 class="display-1 my-5 text-uppercase fw-bold">Página de proyecto Testing</h1>
+        <a href="/about" class="btn btn-primary w-25">Acerca de nosotros</a>
+      </div>
+
+    </header>
+
+    <!-- SECCIÓN 1 -->
+    <div class="container-fluid" id="about">
+      <div class="row bg-dark text-white p-5 text-center">
+        <div class="col-md-4 offset-md-4">
+          <h3>Introducción.</h3>
+          <p>
+            Espero que la página creda tenga toda la información solicitada, todos los procedimientos, acotaciones y demases fueron registrados en un respectivo block de notas y archivados para su futura modificación (en caso de necesitarse), agradecimientos a todo el personal que brindó su apoyo para la confección y modificación de este proyecto.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECCION FOOTER DE LA PAGINA -->
+    <%- include("partials/footer.ejs") %>
+
+    <!-- JAVASCRIPT CDNS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
